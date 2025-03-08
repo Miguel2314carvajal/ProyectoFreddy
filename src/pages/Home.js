@@ -2,7 +2,7 @@ function Home() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="py-16 bg-white dark:bg-[#23272F]">
+      <section className="py-16 bg-white dark:bg-[#18191B]">
         <div className="w-full max-w-[1200px] mx-auto px-4 text-center">
           <div className="mb-4">
             <img 
@@ -24,7 +24,7 @@ function Home() {
       </section>
 
       {/* Objeto y Alcance */}
-      <section className="py-16 bg-slate-50 dark:bg-[#2b303b]">
+      <section className="py-16 bg-slate-50 dark:bg-[#23272F]">
         <div className="w-full max-w-[1200px] mx-auto px-4">
           <div className="max-w-[800px] mx-auto">
             <h2 className="text-[1.75rem] font-bold text-slate-900 dark:text-white mb-6 text-center">
@@ -38,7 +38,7 @@ function Home() {
             </p>
 
             {/* Ámbitos de aplicación */}
-            <div className="bg-white dark:bg-slate-700 rounded-lg p-6 shadow-lg mb-8">
+            <div className="bg-white dark:bg-[#373b44] rounded-lg p-6 shadow-lg mb-8">
               <h3 className="text-[1.25rem] font-semibold mb-4 text-slate-900 dark:text-white">
                 Ámbitos de Aplicación
               </h3>
@@ -54,7 +54,7 @@ function Home() {
             </div>
 
             {/* Alcance */}
-            <div className="bg-white dark:bg-slate-700 rounded-lg p-6 shadow-lg mb-8">
+            <div className="bg-white dark:bg-[#373b44] rounded-lg p-6 shadow-lg mb-8">
               <h3 className="text-[1.25rem] font-semibold mb-4 text-slate-900 dark:text-white">
                 Alcance
               </h3>
@@ -74,7 +74,7 @@ function Home() {
       </section>
 
       {/* Metodología */}
-      <section className="py-16 bg-white dark:bg-[#23272F]">
+      <section className="py-16 bg-white dark:bg-[#18191B]">
         <div className="w-full max-w-[1200px] mx-auto px-4">
           <div className="max-w-[800px] mx-auto">
             <h2 className="text-[1.75rem] font-bold text-slate-900 dark:text-white mb-6 text-center">
@@ -82,7 +82,7 @@ function Home() {
             </h2>
             
             {/* Definición del punto de partida */}
-            <div className="bg-white dark:bg-slate-700 rounded-lg p-6 shadow-lg mb-8">
+            <div className="bg-white dark:bg-[#23272F] rounded-lg p-6 shadow-lg mb-8">
               <h3 className="text-[1.25rem] font-semibold mb-4 text-slate-900 dark:text-white">
                 1. Definición del punto de partida
               </h3>
@@ -101,7 +101,7 @@ function Home() {
             </div>
 
             {/* Mapa de brechas */}
-            <div className="bg-white dark:bg-slate-700 rounded-lg p-6 shadow-lg mb-8">
+            <div className="bg-white dark:bg-[#23272F] rounded-lg p-6 shadow-lg mb-8">
               <h3 className="text-[1.25rem] font-semibold mb-4 text-slate-900 dark:text-white">
                 2. Mapa de brechas
               </h3>
@@ -120,7 +120,7 @@ function Home() {
             </div>
 
             {/* Modelo Skillman PDP */}
-            <div className="bg-white dark:bg-slate-700 rounded-lg p-6 shadow-lg">
+            <div className="bg-white dark:bg-[#23272F] rounded-lg p-6 shadow-lg">
               <h3 className="text-[1.25rem] font-semibold mb-4 text-slate-900 dark:text-white">
                 3. Modelo Skillman PDP
               </h3>
@@ -133,7 +133,7 @@ function Home() {
       </section>
 
       {/* Documentación y Servicios */}
-      <section className="py-16 bg-slate-50 dark:bg-[#2b303b]">
+      <section className="py-16 bg-slate-50 dark:bg-[#23272F]">
         <div className="w-full max-w-[1200px] mx-auto px-4">
           <div className="max-w-[800px] mx-auto">
             <h2 className="text-[1.75rem] font-bold text-slate-900 dark:text-white mb-6 text-center">
@@ -141,7 +141,7 @@ function Home() {
             </h2>
             
             {/* Documentación */}
-            <div className="bg-white dark:bg-slate-700 rounded-lg p-6 shadow-lg mb-8">
+            <div className="bg-white dark:bg-[#373b44] rounded-lg p-6 shadow-lg mb-8">
               <h3 className="text-[1.25rem] font-semibold mb-4 text-slate-900 dark:text-white">
                 Documentación Entregable
               </h3>
@@ -165,7 +165,7 @@ function Home() {
             </div>
 
             {/* Otros servicios DPD */}
-            <div className="bg-white dark:bg-slate-700 rounded-lg p-6 shadow-lg mb-8">
+            <div className="bg-white dark:bg-[#373b44] rounded-lg p-6 shadow-lg mb-8">
               <h3 className="text-[1.25rem] font-semibold mb-4 text-slate-900 dark:text-white">
                 Otros servicios DPD
               </h3>
@@ -188,64 +188,15 @@ function Home() {
         </div>
       </section>
 
-      {/* Propuesta Económica */}
-      <section className="py-16 bg-white dark:bg-[#23272F]">
-        <div className="w-full max-w-[1200px] mx-auto px-4">
-          <div className="max-w-[800px] mx-auto">
-            <h2 className="text-[1.75rem] font-bold text-slate-900 dark:text-white mb-6 text-center">
-              Propuesta Económica
-            </h2>
-            
-            {/* Tabla de precios */}
-            <div className="bg-white dark:bg-slate-700 rounded-lg p-6 shadow-lg mb-8">
-              <div className="overflow-x-auto">
-                <table className="w-full mb-3">
-                  <thead>
-                    <tr className="border-b dark:border-slate-600">
-                      <th className="py-2 text-left text-slate-900 dark:text-white">Punto de partida y mapa de brechas</th>
-                      <th className="py-2 text-left text-slate-900 dark:text-white">Modelo Skillman PDP</th>
-                      <th className="py-2 text-left text-slate-900 dark:text-white">Servicio DPD externo (120min)</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td className="py-3 text-[1.125rem] font-semibold text-[#087EA4]">US$ 1.500,00</td>
-                      <td className="py-3 text-[1.125rem] font-semibold text-[#087EA4]">US$ 8.700,00</td>
-                      <td className="py-3 text-[1.125rem] font-semibold text-[#087EA4]">US$ 300/evento</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <p className="text-sm text-slate-500 dark:text-slate-400 italic">
-                  Los valores mostrados no incluyen el VALOR DE IVA
-                </p>
-              </div>
-
-              {/* Nota sobre el modelo */}
-              <div className="mt-6">
-                <p className="text-[1rem] text-slate-900 dark:text-white font-semibold mb-3">
-                  Nota: El modelo Skillman-PDP con DPD externo (Pago por evento), incluye:
-                </p>
-                <ul className="list-disc pl-6 space-y-2 text-slate-600 dark:text-slate-400">
-                  <li>Mapa de brechas</li>
-                  <li>4 eventos de DPD externo en la fase I</li>
-                  <li>2 eventos de DPD externo en la fase II</li>
-                  <li>2 eventos de DPD externo en la fase III</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Equipo PDP */}
-      <section className="py-16 bg-slate-50 dark:bg-[#2b303b]">
+      <section className="py-16 bg-white dark:bg-[#18191B]">
         <div className="w-full max-w-[1200px] mx-auto px-4">
           <h2 className="text-[1.75rem] font-bold text-slate-900 dark:text-white mb-8 text-center">
             Equipo PDP
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[960px] mx-auto">
             {/* Freddy */}
-            <div className="bg-white dark:bg-slate-700 rounded-lg p-6 shadow-lg mb-8">
+            <div className="bg-white dark:bg-[#23272F] rounded-lg p-6 shadow-lg mb-8">
               <div className="flex items-start gap-6">
                 <img 
                   src="/freddy-photo.jpg" 
@@ -269,7 +220,7 @@ function Home() {
             </div>
 
             {/* Edison */}
-            <div className="bg-white dark:bg-slate-700 rounded-lg p-6 shadow-lg mb-8">
+            <div className="bg-white dark:bg-[#23272F] rounded-lg p-6 shadow-lg mb-8">
               <div className="flex items-start gap-6">
                 <img 
                   src="/edison-photo.jpg" 

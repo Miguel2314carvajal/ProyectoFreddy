@@ -69,7 +69,7 @@ function Learn() {
 
   return (
     <>
-      <div className="flex min-h-screen bg-white dark:bg-[#23272F]">
+      <div className="flex min-h-screen bg-white dark:bg-[#18191B]">
         {/* Sidebar izquierdo */}
         <aside className="w-[320px] border-r border-slate-200 dark:border-slate-700 fixed h-screen overflow-y-auto">
           <div className="py-10 px-6">
@@ -234,7 +234,7 @@ function Learn() {
               </p>
 
               {/* Sección "You will learn" */}
-              <div className="bg-slate-50 dark:bg-slate-800 rounded-lg p-8 mb-12">
+              <div className="bg-slate-50 dark:bg-[#23272F] rounded-lg p-8 mb-12">
                 <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">
                   You will learn
                 </h2>
@@ -261,7 +261,7 @@ function Learn() {
                 </p>
 
                 {/* Primer bloque de código */}
-                <div className="bg-white dark:bg-slate-950 rounded-lg overflow-hidden mb-6">
+                <div className="bg-white dark:bg-[#23272F] rounded-lg overflow-hidden mb-6">
                   <pre className="p-4 text-sm overflow-x-auto">
                     <code className="language-jsx">
                       {`function MyButton() {
@@ -278,7 +278,7 @@ function Learn() {
                 </p>
 
                 {/* Segundo bloque de código */}
-                <div className="bg-white dark:bg-slate-950 rounded-lg overflow-hidden mb-6">
+                <div className="bg-white dark:bg-[#23272F] rounded-lg overflow-hidden mb-6">
                   <pre className="p-4 text-sm overflow-x-auto">
                     <code className="language-jsx">
                       {`export default function MyApp() {
@@ -303,7 +303,7 @@ function Learn() {
 
                 {/* Tercer bloque de código con resultado */}
                 <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div className="bg-white dark:bg-slate-950 rounded-lg overflow-hidden">
+                  <div className="bg-white dark:bg-[#23272F] rounded-lg overflow-hidden">
                     <div className="border-b border-slate-200 dark:border-slate-700 p-4 flex items-center justify-between">
                       <span className="text-sm text-slate-700 dark:text-slate-300">App.js</span>
                       <div className="flex gap-2">
@@ -369,7 +369,7 @@ function Learn() {
                 </p>
 
                 {/* Bloque de código */}
-                <div className="bg-white dark:bg-slate-950 rounded-lg overflow-hidden mb-6">
+                <div className="bg-white dark:bg-[#23272F] rounded-lg overflow-hidden mb-6">
                   <pre className="p-4 text-sm overflow-x-auto">
                     <code className="language-jsx">
                       {`function AboutPage() {
@@ -405,7 +405,7 @@ function Learn() {
                 </p>
 
                 {/* Primer ejemplo de código */}
-                <div className="bg-white dark:bg-slate-950 rounded-lg overflow-hidden mb-6">
+                <div className="bg-white dark:bg-[#23272F] rounded-lg overflow-hidden mb-6">
                   <pre className="p-4 text-sm overflow-x-auto">
                     <code className="language-jsx text-[#CA3132] dark:text-[#FF6B7D]">
                       {'<img className="avatar" />'}
@@ -418,7 +418,7 @@ function Learn() {
                 </p>
 
                 {/* Segundo ejemplo de código */}
-                <div className="bg-white dark:bg-slate-950 rounded-lg overflow-hidden mb-6">
+                <div className="bg-white dark:bg-[#23272F] rounded-lg overflow-hidden mb-6">
                   <pre className="p-4 text-sm overflow-x-auto">
                     <code className="language-css">
                       {`/* In your CSS */
