@@ -36,3 +36,46 @@
     transform: rotate(360deg);
   }
 }
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+/* Variables globales de colores */
+:root {
+  --primary-color: #087ea4;
+  --secondary-color: #149eca;
+  --text-color: #333333;
+  --background-light: #f7f7f7;
+  --background-white: #ffffff;
+  --border-color: #e1e1e1;
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .app {
+    font-size: 14px;
+  }
+}

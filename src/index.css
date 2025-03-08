@@ -1,3 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-slate-500 dark:text-slate-400;
+  }
+}
+
+/* Asegúrate de que las transiciones sean suaves */
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Estilos específicos para el modo oscuro */
+.dark body {
+  background-color: #23272F;
+}
+
+/* Ajustes para el logo en modo oscuro si es necesario */
+.dark img[src="/logo.svg"] {
+  filter: brightness(0.8) contrast(1.2);
+}
+
+:root {
+  --bg-wash: #fff;
+  --bg-wash-dark: #23272f;
+  --gray-30: #1a1a1a;
+  --gray-40: #2a2a2a;
+  --primary: #087ea4;
+  --primary-dark: #149eca;
+}
+
+.dark {
+  --bg-wash: #23272f;
+  --bg-wash-dark: #343a46;
+}
+
+body {
+  @apply bg-[--bg-wash] text-[--gray-30] dark:text-white transition-colors duration-300;
+}
+
+.bg-wash {
+  background-color: var(--bg-wash);
+}
+
+.dark .bg-wash-dark {
+  background-color: var(--bg-wash-dark);
+}
+
+.text-gray-30 {
+  color: var(--gray-30);
+}
+
+.bg-gray-30\/20 {
+  background-color: rgb(102 102 102 / 0.2);
+}
+
+.dark .bg-gray-40\/20 {
+  background-color: rgb(153 153 153 / 0.2);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +73,88 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Reset de estilos para eliminar líneas */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Eliminar cualquier línea entre secciones */
+main > div {
+  border: none !important;
+  position: relative;
+}
+
+/* Asegurar que no haya espacios entre secciones */
+main > div::after,
+main > div::before {
+  display: none !important;
+}
+
+/* Prevenir cualquier borde automático */
+section, div {
+  border-width: 0 !important;
+}
+
+/* Mejoras para las transiciones entre secciones */
+.section-divider {
+  position: relative;
+  height: 8rem;
+  pointer-events: none;
+}
+
+/* Ajustes para el modo oscuro */
+.dark .section-divider {
+  opacity: 0.5;
+}
+
+/* Asegurar que no haya espacios entre secciones */
+main > section {
+  border-width: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Añade esto a tu archivo CSS existente */
+.transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem; /* Esto ayuda con el header fijo */
+}
+
+/* Para mejorar el scroll en Safari */
+@supports (-webkit-overflow-scrolling: touch) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Añade esto a tu CSS existente */
+.transition-colors {
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* Asegura que el scroll sea suave en todo el sitio */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Para Safari */
+@supports (-webkit-hyphens:none) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Ajusta el padding superior para compensar el header fijo */
+section {
+  scroll-margin-top: 5rem;
 }
