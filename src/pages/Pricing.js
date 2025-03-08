@@ -1,6 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Pricing() {
+  const [isAnnual, setIsAnnual] = useState(false);
+
+  // Precios originales y con incremento del 20%
+  const prices = {
+    startup: {
+      monthly: 1800, // Precio con 20% de incremento
+      annual: 1500   // Precio original
+    },
+    professional: {
+      monthly: 10440, // Precio con 20% de incremento
+      annual: 8700    // Precio original
+    },
+    enterprise: {
+      monthly: 360,  // Precio con 20% de incremento
+      annual: 300    // Precio original
+    }
+  };
+
   return (
     <div className="bg-white dark:bg-[#18191B] min-h-screen">
       <div className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
@@ -16,10 +34,24 @@ function Pricing() {
         {/* Toggle Mensual/Anual */}
         <div className="mt-12 flex justify-center">
           <div className="relative self-center rounded-lg bg-gray-100 dark:bg-[#23272F] p-0.5">
-            <button className="relative w-1/2 rounded-md py-2 text-sm font-semibold text-gray-900 dark:text-white whitespace-nowrap focus:outline-none focus:z-10 sm:w-auto sm:px-8 bg-white dark:bg-[#343A46] shadow">
+            <button
+              onClick={() => setIsAnnual(false)}
+              className={`relative w-1/2 rounded-md py-2 text-sm font-semibold whitespace-nowrap focus:outline-none focus:z-10 sm:w-auto sm:px-8 ${
+                !isAnnual 
+                  ? 'bg-white dark:bg-[#343A46] text-gray-900 dark:text-white shadow'
+                  : 'text-gray-700 dark:text-gray-300'
+              }`}
+            >
               MENSUAL
             </button>
-            <button className="relative w-1/2 rounded-md py-2 text-sm font-semibold text-gray-700 dark:text-gray-300 whitespace-nowrap focus:outline-none focus:z-10 sm:w-auto sm:px-8">
+            <button
+              onClick={() => setIsAnnual(true)}
+              className={`relative w-1/2 rounded-md py-2 text-sm font-semibold whitespace-nowrap focus:outline-none focus:z-10 sm:w-auto sm:px-8 ${
+                isAnnual 
+                  ? 'bg-white dark:bg-[#343A46] text-gray-900 dark:text-white shadow'
+                  : 'text-gray-700 dark:text-gray-300'
+              }`}
+            >
               ANUAL (AHORRO 20%)
             </button>
           </div>
@@ -33,10 +65,10 @@ function Pricing() {
               <h2 className="text-lg font-medium text-gray-900 dark:text-white">Punto de partida y mapa de brechas</h2>
               <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">Evaluación inicial y diagnóstico</p>
               <p className="mt-8">
-                <span className="text-4xl font-bold text-gray-900 dark:text-white">US$ 1.800,00</span>
+                <span className="text-4xl font-bold text-gray-900 dark:text-white">US$ {isAnnual ? prices.startup.annual.toLocaleString() : prices.startup.monthly.toLocaleString()},00</span>
               </p>
-              <button className="mt-8 block w-full rounded-md bg-white dark:bg-[#343A46] px-4 py-2 text-sm font-semibold text-gray-900 dark:text-white border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-[#404756] transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-[1.02]">
-                GET STARTED
+              <button className="mt-8 block w-full rounded-md bg-slate-50 dark:bg-[#343A46] px-4 py-2 text-sm font-semibold text-gray-900 dark:text-white border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-[#404756] transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-[1.02]">
+                EMPEZAR
               </button>
             </div>
             <div className="px-6 pt-6 pb-8">
@@ -81,10 +113,10 @@ function Pricing() {
               <h2 className="text-lg font-medium text-gray-900 dark:text-white">Modelo Skillman PDP</h2>
               <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">Solución completa de desarrollo</p>
               <p className="mt-8">
-                <span className="text-4xl font-bold text-gray-900 dark:text-white">US$ 10.440,00</span>
+                <span className="text-4xl font-bold text-gray-900 dark:text-white">US$ {isAnnual ? prices.professional.annual.toLocaleString() : prices.professional.monthly.toLocaleString()},00</span>
               </p>
               <button className="mt-8 block w-full rounded-md bg-gradient-to-r from-pink-600 to-yellow-500 px-4 py-2 text-sm font-semibold text-white hover:opacity-90 transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-[1.02]">
-                GET STARTED
+                EMPEZAR
               </button>
             </div>
             <div className="px-6 pt-6 pb-8">
@@ -124,11 +156,11 @@ function Pricing() {
               <h2 className="text-lg font-medium text-gray-900 dark:text-white">Servicio DPD externo</h2>
               <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">120 minutos por evento</p>
               <p className="mt-8">
-                <span className="text-4xl font-bold text-gray-900 dark:text-white">US$ 360,00</span>
+                <span className="text-4xl font-bold text-gray-900 dark:text-white">US$ {isAnnual ? prices.enterprise.annual.toLocaleString() : prices.enterprise.monthly.toLocaleString()},00</span>
                 <span className="text-base font-medium text-gray-500 dark:text-gray-400">/evento</span>
               </p>
-              <button className="mt-8 block w-full rounded-md bg-white dark:bg-[#343A46] px-4 py-2 text-sm font-semibold text-gray-900 dark:text-white border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-[#404756] transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-[1.02]">
-                GET STARTED
+              <button className="mt-8 block w-full rounded-md bg-slate-50 dark:bg-[#343A46] px-4 py-2 text-sm font-semibold text-gray-900 dark:text-white border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-[#404756] transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-[1.02]">
+                EMPEZAR
               </button>
             </div>
             <div className="px-6 pt-6 pb-8">

@@ -51,7 +51,7 @@ function Header() {
               <input
                 type="search"
                 className="block w-full pl-10 pr-3 py-2 border border-slate-300 dark:border-slate-700 rounded-full bg-slate-100/70 dark:bg-[#3c414b] text-sm placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:border-sky-500 dark:focus:border-sky-400 focus:ring-1 focus:ring-sky-500 dark:focus:ring-sky-400"
-                placeholder="Search"
+                placeholder="Buscar"
                 onClick={() => setIsSearchOpen(true)}
               />
               <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
@@ -66,9 +66,9 @@ function Header() {
           {/* Navigation */}
           <div className="flex items-center gap-8 ml-32 pr-4">
             <div className="hidden md:flex items-center gap-8">
-              <Link to="/learn" className="text-[15px] font-medium text-slate-600 dark:text-slate-400 hover:text-sky-500 dark:hover:text-sky-400">Learn</Link>
-              <Link to="/pricing" className="text-[15px] font-medium text-slate-600 dark:text-slate-400 hover:text-sky-500 dark:hover:text-sky-400">Pricing</Link>
-              <Link to="/community" className="text-[15px] font-medium text-slate-600 dark:text-slate-400 hover:text-sky-500 dark:hover:text-sky-400">Community</Link>
+              <Link to="/learn" className="text-[15px] font-medium text-slate-600 dark:text-slate-400 hover:text-sky-500 dark:hover:text-sky-400">Aprender</Link>
+              <Link to="/precios" className="text-[15px] font-medium text-slate-600 dark:text-slate-400 hover:text-sky-500 dark:hover:text-sky-400">Precios</Link>
+              <Link to="/community" className="text-[15px] font-medium text-slate-600 dark:text-slate-400 hover:text-sky-500 dark:hover:text-sky-400">Comunidad</Link>
               <Link to="/blog" className="text-[15px] font-medium text-slate-600 dark:text-slate-400 hover:text-sky-500 dark:hover:text-sky-400">Blog</Link>
             </div>
             

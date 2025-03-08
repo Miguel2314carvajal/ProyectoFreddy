@@ -261,7 +261,7 @@ function Learn() {
                 </p>
 
                 {/* Primer bloque de código */}
-                <div className="bg-white dark:bg-[#23272F] rounded-lg overflow-hidden mb-6">
+                <div className="bg-slate-50 dark:bg-[#23272F] rounded-lg overflow-hidden mb-6">
                   <pre className="p-4 text-sm overflow-x-auto">
                     <code className="language-jsx">
                       {`function MyButton() {
@@ -278,7 +278,7 @@ function Learn() {
                 </p>
 
                 {/* Segundo bloque de código */}
-                <div className="bg-white dark:bg-[#23272F] rounded-lg overflow-hidden mb-6">
+                <div className="bg-slate-50 dark:bg-[#23272F] rounded-lg overflow-hidden mb-6">
                   <pre className="p-4 text-sm overflow-x-auto">
                     <code className="language-jsx">
                       {`export default function MyApp() {
@@ -303,10 +303,10 @@ function Learn() {
 
                 {/* Tercer bloque de código con resultado */}
                 <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div className="bg-white dark:bg-[#23272F] rounded-lg overflow-hidden">
+                  <div className="bg-slate-50 dark:bg-[#23272F] rounded-lg overflow-hidden">
                     <div className="border-b border-slate-200 dark:border-slate-700 p-4 flex items-center justify-between">
                       <span className="text-sm text-slate-700 dark:text-slate-300">App.js</span>
-                      <div className="flex gap-2">
+                      <div className="flex gap-2" >
                         <button className="text-sm text-slate-500">Download</button>
                         <button className="text-sm text-slate-500">Reset</button>
                         <button className="text-sm text-slate-500">Fork</button>
@@ -369,7 +369,7 @@ function Learn() {
                 </p>
 
                 {/* Bloque de código */}
-                <div className="bg-white dark:bg-[#23272F] rounded-lg overflow-hidden mb-6">
+                <div className="bg-slate-50 dark:bg-[#23272F] rounded-lg overflow-hidden mb-6">
                   <pre className="p-4 text-sm overflow-x-auto">
                     <code className="language-jsx">
                       {`function AboutPage() {
@@ -405,7 +405,7 @@ function Learn() {
                 </p>
 
                 {/* Primer ejemplo de código */}
-                <div className="bg-white dark:bg-[#23272F] rounded-lg overflow-hidden mb-6">
+                <div className="bg-slate-50 dark:bg-[#23272F] rounded-lg overflow-hidden mb-6">
                   <pre className="p-4 text-sm overflow-x-auto">
                     <code className="language-jsx text-[#CA3132] dark:text-[#FF6B7D]">
                       {'<img className="avatar" />'}
@@ -418,7 +418,7 @@ function Learn() {
                 </p>
 
                 {/* Segundo ejemplo de código */}
-                <div className="bg-white dark:bg-[#23272F] rounded-lg overflow-hidden mb-6">
+                <div className="bg-slate-50  dark:bg-[#23272F] rounded-lg overflow-hidden mb-6">
                   <pre className="p-4 text-sm overflow-x-auto">
                     <code className="language-css">
                       {`/* In your CSS */
