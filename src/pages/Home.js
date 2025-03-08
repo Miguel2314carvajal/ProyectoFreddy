@@ -1,6 +1,6 @@
 function Home() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-white dark:bg-[#18191B]">
       {/* Hero Section */}
       <section className="py-16 bg-white dark:bg-[#18191B]">
         <div className="w-full max-w-[1200px] mx-auto px-4 text-center">
@@ -23,8 +23,8 @@ function Home() {
         </div>
       </section>
 
-      {/* Objeto y Alcance */}
-      <section className="py-16 bg-slate-50 dark:bg-[#23272F]">
+{/* Objeto y Alcance */}
+<section className="py-16 bg-slate-50 dark:bg-[#23272F]">
         <div className="w-full max-w-[1200px] mx-auto px-4">
           <div className="max-w-[800px] mx-auto">
             <h2 className="text-[1.75rem] font-bold text-slate-900 dark:text-white mb-6 text-center">
@@ -74,7 +74,7 @@ function Home() {
       </section>
 
       {/* Metodología */}
-      <section className="py-16 bg-white dark:bg-[#18191B]">
+      <section id="metodologia" className="py-16 bg-white dark:bg-[#18191B]">
         <div className="w-full max-w-[1200px] mx-auto px-4">
           <div className="max-w-[800px] mx-auto">
             <h2 className="text-[1.75rem] font-bold text-slate-900 dark:text-white mb-6 text-center">
@@ -133,7 +133,7 @@ function Home() {
       </section>
 
       {/* Documentación y Servicios */}
-      <section className="py-16 bg-slate-50 dark:bg-[#23272F]">
+      <section id="documentacion" className="py-16 bg-slate-50 dark:bg-[#23272F]">
         <div className="w-full max-w-[1200px] mx-auto px-4">
           <div className="max-w-[800px] mx-auto">
             <h2 className="text-[1.75rem] font-bold text-slate-900 dark:text-white mb-6 text-center">

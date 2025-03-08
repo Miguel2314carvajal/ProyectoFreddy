@@ -28,7 +28,7 @@ function Pricing() {
         {/* Tarjetas de Precios */}
         <div className="mt-12 space-y-4 sm:mt-16 sm:grid sm:grid-cols-3 sm:gap-6 sm:space-y-0">
           {/* Punto de partida */}
-          <div className="divide-y divide-gray-200 dark:divide-gray-700 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#23272F] shadow transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:border-pink-500/50 dark:hover:border-pink-500/50 cursor-pointer">
+          <div id="punto-partida" className="divide-y divide-gray-200 dark:divide-gray-700 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#23272F] shadow transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:border-pink-500/50 dark:hover:border-pink-500/50 cursor-pointer">
             <div className="p-6">
               <h2 className="text-lg font-medium text-gray-900 dark:text-white">Punto de partida y mapa de brechas</h2>
               <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">Evaluación inicial y diagnóstico</p>
@@ -71,7 +71,7 @@ function Pricing() {
           </div>
 
           {/* Modelo Skillman PDP */}
-          <div className="divide-y divide-gray-200 dark:divide-gray-700 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#23272F] shadow-xl relative transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:border-pink-500/50 dark:hover:border-pink-500/50 cursor-pointer">
+          <div id="modelo-skillman" className="divide-y divide-gray-200 dark:divide-gray-700 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#23272F] shadow-xl relative transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:border-pink-500/50 dark:hover:border-pink-500/50 cursor-pointer">
             <div className="absolute -top-5 left-0 right-0 flex justify-center">
               <span className="inline-flex rounded-full bg-gradient-to-r from-pink-600 to-yellow-500 px-4 py-1 text-sm font-semibold text-white">
                 Más Popular
@@ -119,7 +119,7 @@ function Pricing() {
           </div>
 
           {/* Servicio DPD externo */}
-          <div className="divide-y divide-gray-200 dark:divide-gray-700 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#23272F] shadow transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:border-pink-500/50 dark:hover:border-pink-500/50 cursor-pointer">
+          <div id="servicio-dpd" className="divide-y divide-gray-200 dark:divide-gray-700 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#23272F] shadow transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:border-pink-500/50 dark:hover:border-pink-500/50 cursor-pointer">
             <div className="p-6">
               <h2 className="text-lg font-medium text-gray-900 dark:text-white">Servicio DPD externo</h2>
               <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">120 minutos por evento</p>
